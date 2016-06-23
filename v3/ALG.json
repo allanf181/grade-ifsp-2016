@@ -1,0 +1,16 @@
+{
+    "cc": "ALGORITMOS",
+    "ano": "1",
+    "cod": "ALG",
+    "nsd": "2",
+    "tda": "76",
+    "tdh": "57",
+    "metodo": "tp",
+    "usalocal": "s",
+    "quais": "Laboratório de Informática",
+    "ementa": "A disciplina aborda: conceitos iniciais sobre processamento de dados, tipos de dados, definição de variáveis, operadores aritméticos, estruturas de decisão, estruturas de repetição, utilização de variáveis indexadas, classificação e ordenação de dados e modularização (técnicas de programação com sub-rotinas).",
+    "obj": "<ul><li>Conhecer os conceitos básicos do desenvolvimento de programas em nível lógico;</li><li>Resolver problemas computacionais (também em nível lógico) com uma visão sistêmica;</li><li>Interpretar e solucionar problemas básicos por meio de lógica de programação de computadores;</li><li>Utilizar a ferramenta Microsoft Visio para apresentar os fluxogramas que representam as soluções lógicas.</li></ul>",
+    "contprog": "<ul> <li>Histórico, apresentação, principais aplicações da linguagem;</li> <li>Linguagem de programação: características gerais;</li> <li>Estruturas dos programas e definição de lógica de programação;</li> <li>Tipos de dados;</li> <li>Variáveis inteiras e variáveis reais;</li> <li>Variáveis literais e operações com literais;</li> <li>Operadores aritméticos e expressões aritméticas e sua hierarquia de cálculo;</li> <li>Estruturas lógicas (operadores lógicos e relacionais);</li> <li>Decisão lógica;</li> <li>Decisão encadeada;</li> <li>Estrutura de decisão múltipla;</li> <li>Estruturas de repetição;</li> <li>Programação modular;</li> <li>Módulos e sub-rotinas de programas;</li> <li>Variáveis indexadas;</li> <li>Variáveis indexadas com um único índice (vetores);</li> <li>Tipos de vetores;</li> <li>Definição e utilização de estruturas de repetição com vetores;</li> <li>Matrizes;</li> <li>Definição e utilização de matriz com até três dimensões (três índices);</li> <li>Tipos de matrizes.</li> </ul>",
+    "biblibasic": "JOYANES, L. A. <b>Fundamentos de Programação:</b> algoritmos estruturas de dados e objetos. 3.ed. São Paulo: McGraw-Hill Brasil, 2008. <br><br> MANZANO, J. A. N. G.; OLIVEIRA, J. F. <b>Algoritmos</b> – Lógica para desenvolvimento de Programação. 22. ed. São Paulo: Érica, 2009.<br><br> PUGA, S.; RISSETTI, G. <b>Lógica de Programação e Estrutura de dados.</b> 2. ed. São Paulo: Prentice-Hall, 2008.",
+    "biblicomp": "ASCENSIO, A. F. G.; CAMPOS, E. A. V. <b>Fundamentos da Programação de Computadores, Algoritmos, Pascal e C/C++ e Java</b>. 2. ed. São Paulo: Prentice-Hall, 2008. <br><br>BERGAMASCHI, M. P.; ASENJO, M. N. <b>Lógica de Programação</b>: Fundamentos. Cubatão: [s.n.], 2000. (Material de apoio). <br><br>CARBONI, I. F. <b>Lógica de Programação</b>. São Paulo: Cengage Learning, 2003. <br><br>FORBELLONE, A. L. V.; EBERSPACHER, H. F. <b>Lógica de programação</b>: a Construção de Algoritmos e Estrutura de Dados. 3. ed. São Paulo: Prentice-Hall, 2005. <br><br>XAVIER, G. F. C. <b>Lógica de Programação</b>. 10. ed. São Paulo: Senac, 2007."
+}

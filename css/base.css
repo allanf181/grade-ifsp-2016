@@ -1,0 +1,78 @@
+table, tr,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+td {
+    text-align:left;
+    padding-left: 8px;
+}
+td.center{
+    text-align:center;
+}
+td.line{
+    line-height: 1px;
+}
+body{
+    font-family:sans-serif;
+}
+td.a{
+    height:10%
+}
+.upper{
+    text-transform:uppercase;
+}
+.bold{
+    font-weight: bold;
+}
+div.dfn {
+    cursor: default;
+    position: absolute;
+    font-size: 40px ;
+  
+}
+div.dfn::after {
+  content: attr(datainfo);
+  display: inline;
+  position: absolute;
+  top: 22px; left: 0;
+  font-style: normal;
+  text-transform: none;
+  opacity: 0;
+  width: 230px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  pointer-events: none; /* This prevents the box from apearing when hovered. */
+  transition: opacity 250ms, top 250ms;
+}
+div.dfn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px; left: 15px;
+  opacity: 0;
+  width: 0; height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: rgba(0,0,0,0.8);
+  transition: opacity 250ms, top 250ms;
+}
+div.dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+div.dfn:hover::after,
+div.dfn:hover::before {opacity: 1;}
+div.dfn:hover::after {top: 40px;}
+div.dfn:hover::before {top: 30px;}
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#000; 
+     text-decoration:none; 
+     cursor:pointer;  
+}

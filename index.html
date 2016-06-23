@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Estrutura Curricular</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style type="text/css">
+        table, tr,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            text-align:center;
+        }
+        td.ncenter{
+            text-align:left;
+        }
+        body{
+            font-family:sans-serif;
+        }
+        td.a{
+            height:10%
+        }
+        .rotate{
+            transform: rotate(-90deg) translate(0px, -160%); 
+            position: absolute; 
+            white-space:nowrap;
+        }
+        .upper{
+            text-transform:uppercase;
+        }
+        .colorlig1{
+            background:#F1DBDB;
+        }
+        .colormat{
+            background:#D99493;
+        }
+        .colorcdn{
+            background:#FFFF00;
+        }
+        .colorchu{
+            background:#C2D59B;
+        }
+        .colorlig2{
+            background:#B1A0C6;
+        }
+        .colorpro{
+            background:#C5D9F0;
+        }
+        .divi{
+            background:#C0C0C0;
+            font-weight: bold;
+        }
+        
+        div.dfn {
+            cursor: default;
+            position: absolute;
+            font-size: 40px ;
+          
+        }
+        div.dfn::after {
+          content: attr(datainfo);
+          display: inline;
+          position: absolute;
+          top: 22px; left: 0;
+          font-style: normal;
+          text-transform: none;
+          opacity: 0;
+          width: 230px;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 1.5em;
+          padding: 0.5em 0.8em;
+          background: rgba(0,0,0,0.8);
+          color: #fff;
+          pointer-events: none; /* This prevents the box from apearing when hovered. */
+          transition: opacity 250ms, top 250ms;
+        }
+        div.dfn::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 12px; left: 15px;
+          opacity: 0;
+          width: 0; height: 0;
+          border: solid transparent 5px;
+          border-bottom-color: rgba(0,0,0,0.8);
+          transition: opacity 250ms, top 250ms;
+        }
+        div.dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
+        div.dfn:hover::after,
+        div.dfn:hover::before {opacity: 1;}
+        div.dfn:hover::after {top: 40px;}
+        div.dfn:hover::before {top: 30px;}
+        .dropdown {
+            display: inline;
+            cursor: default;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            background: #fff;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: inline-flex;
+        }
+        .dropdown-content a:hover{
+            background:#f1f1f1;
+        }
+        .dropdown-content a {
+            padding: 10px 10px;
+            text-decoration: none;
+            display: inline-flex;
+            box-sizing: border-box;
+            text-transform: none;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        
+        a:hover 
+        {
+             color:#000; 
+             text-decoration:none; 
+             cursor:pointer;  
+        }
+    </style>
+</head>
+<body>
+   <div class="dfn" datainfo="Passe o mouse no código de uma materia para mais informações." onMouseOver="this.style.color='#000'"
+   onMouseOut="this.style.color='rgba(0,0,0,0.5)'">
+        <i class="material-icons" style="font-size: 40px;color: rgba(0,0,0,0.5); " onMouseOver="this.style.color='#000'"
+   onMouseOut="this.style.color='rgba(0,0,0,0.5)'">help_outline</i>
+   </div>
+    <center>
+        <table style="width: 90%">
+            <tr>
+                <td rowspan="4" colspan="14">
+                    <div style="background-image: url(img/logo.png); background-size: 100px; background-repeat: no-repeat; height: auto; margin: 10px 0 0 0;">
+                        <center>
+                            <p style="overflow:visible">
+                                <br />
+                                <b class="upper">Instituto Federal de Educação, Ciência e Tecnologia de São Paulo</b><br />
+                                Criado pela Lei Nº 11.892, de 29/12/2008<br />
+                                <b>Campus Cubatão</b><br />
+                                Criado pela Portaria Ministerial nº 158, de 12/03/1987<br />
+                                <b>ESTRUTURA CURRICULAR DO CURSO TÉCNICO EM INFORMÁTICA INTEGRADO AO ENSINO MÉDIO</b><br />
+                                Base Legal: Lei nº 9.394/1996, Decreto n° 5.154/2004, Resoluções CNE/CEB nº 02/2012 e nº 06/2012.<br />
+                                <b>Resolução de autorização do Curso no IFSP, nº 396 de 19 de novembro de 2008</b><br />
+                                <b>Atualizado conforme Parecer n° 31, de 17 de novembro de 2015 e segundo dispõe a Resolução n° 26/2014, de 11 de março de 2014</b>
+                            </p>
+                        </center>
+                    </div>
+                </td>
+                <td class="a" colspan="2" style="width: 13%">
+                    Carga Horária Mínima Obrigatória
+                </td>
+            </tr>
+            <tr>
+                <td class="a" colspan="2">
+                    4008
+                </td>
+            </tr>
+            <tr>
+                <td class="a" colspan="2">
+                    Total Anual de semanas
+                </td>
+            </tr>
+            <tr>
+                <td class="a" colspan="2">
+                    38
+                </td>
+            </tr>
+            <tr>
+                <td colspan="16" style="font-size: 20px"><p style="margin: 3px 0 3px 0">Habilitação Profissional: Técnico em Informática</p></td>
+            </tr>
+            <tr>
+                <td rowspan="15" style="width:10%;"><div class="upper rotate"><b>Base nacional comum</b></div></td>
+                <td rowspan="2"><p><b>ÁREAS</b></p></td>
+                <td rowspan="2"><p><b>Componente Curricular</b></p></td>
+                <td rowspan="2"><p><b>Cód.</b></p></td>
+                <td rowspan="2"><p><b>Trat.<br />Met.</b></p></td>
+                <td rowspan="2"><p><b>Núm.<br />Prof.</b></p></td>
+                <td colspan="4"><p><b>Aulas semanais</b></p></td>
+                <td colspan="4"><p><b>Carga horária</b></p></td>
+                <td rowspan="2"><p><b>Total<br />aulas</b></p></td>
+                <td rowspan="2"><p><b>Total<br />horas</b></p></td>
+            </tr>
+            <tr>
+                <td><p><b>1°</b></p></td>
+                <td><p><b>2°</b></p></td>
+                <td><p><b>3°</b></p></td>
+                <td><p><b>4°</b></p></td>
+                <td><p><b>1°</b></p></td>
+                <td><p><b>2°</b></p></td>
+                <td><p><b>3°</b></p></td>
+                <td><p><b>4°</b></p></td>
+            </tr>
+            <tr class="colorlig1">
+                <td class="upper" rowspan="5">Linguagens</td>
+                <td class="ncenter">Arte</td>
+                <td><b class="upper dropdown">ART<div class="dropdown-content"><a href="v3/#ART">1° Ano</a></div></b></td>
+                <td><b class="upper">T/P</b></td>
+                <td><b class="upper">1</b></td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="colorlig1">
+                <td class="ncenter">Educação Física</td>
+                <td><b class="upper dropdown">EFI<div class="dropdown-content"><a href="v3/#EFI">1° Ano</a><a href="v3/#EFI2">2° Ano</a></div></b></td>
+                <td><b class="upper">T/P</b></td>
+                <td><b class="upper">1</b></td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>57</td>
+                <td>0</td>
+                <td>0</td>
+                <td>152</td>
+                <td>114</td>
+            </tr>
+            <tr class="colorlig1">
+                <td class="ncenter">Literatura Brasileira e Portuguesa</td>
+                <td><b class="upper dropdown">LBP<div class="dropdown-content"><a href="v3/#LBP">1° Ano</a><a href="v3/#LBP2">2° Ano</a><a href="v3/#LBP3">3° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b class="upper">1</b></td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>57</td>
+                <td>57</td>
+                <td>57</td>
+                <td>0</td>
+                <td>228</td>
+                <td>171</td>
+            </tr>
+            <tr class="colorlig1">
+                <td class="ncenter">Língua Portuguesa - Gramática</td>
+                <td><b class="upper dropdown">lpg<div class="dropdown-content"><a href="v3/#LPG">1° Ano</a><a href="v3/#LPG2">2° Ano</a><a href="v3/#LPG3">3° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b class="upper">1</b></td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>57</td>
+                <td>57</td>
+                <td>57</td>
+                <td>0</td>
+                <td>228</td>
+                <td>171</td>
+            </tr>
+            <tr class="colorlig1">
+                <td class="ncenter">Língua Portuguesa - Redação</td>
+                <td><b class="upper dropdown">lpr<div class="dropdown-content"><a href="v3/#LPR3">3° Ano</a><a href="v3/#LPR4">4° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b class="upper">1</b></td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>57</td>
+                <td>152</td>
+                <td>114</td>
+            </tr>
+            <tr class="colormat">
+                <td class="upper">Matemática</td>
+                <td class="ncenter">Matemática</td>
+                <td><b class="upper dropdown">MAT<div class="dropdown-content"><a href="v3/#MAT">1° Ano</a><a href="v3/#MAT2">2° Ano</a><a href="v3/#MAT3">3° Ano</a><a href="v3/#MAT4">4° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b class="upper">1</b></td>
+                <td>5</td>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+                <td>142,5</td>
+                <td>85,5</td>
+                <td>85,5</td>
+                <td>85,5</td>
+                <td>532</td>
+                <td>399</td>
+            </tr>
+            <tr class="colorcdn">
+                <td class="upper" rowspan="3">Ciências da<br />natureza</td>
+                <td class="ncenter">Biologia e Programa de Saúde</td>
+                <td><b class="upper dropdown">BPS<div class="dropdown-content"><a href="v3/#BPS2">2° Ano</a><a href="v3/#BPS3">3° Ano</a><a href="v3/#BPS4">4° Ano</a></div></b></td>
+                <td><b class="upper">T/P</b></td>
+                <td><b class="upper">1</b></td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>57</td>
+                <td>57</td>
+                <td>57</td>
+                <td>228</td>
+                <td>171</td>
+            </tr>
+            <tr class="colorcdn">
+                <td class="ncenter">Física</td>
+                <td><b class="upper dropdown">fis<div class="dropdown-content"><a href="v3/#FIS">1° Ano</a><a href="v3/#FIS2">2° Ano</a><a href="v3/#FIS3">3° Ano</a><a href="v3/#FIS4">4° Ano</a></div></b></td>
+                <td><b class="upper">T/P</b></td>
+                <td><b class="upper">1</b></td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>57</td>
+                <td>57</td>
+                <td>57</td>
+                <td>57</td>
+                <td>304</td>
+                <td>228</td>
+            </tr>
+            <tr class="colorcdn">
+                <td class="ncenter">Química</td>
+                <td><b class="upper dropdown">qui<div class="dropdown-content"><a href="v3/#QUI2">2° Ano</a><a href="v3/#QUI3">3° Ano</a><a href="v3/#QUI4">4° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b class="upper">1</b></td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>57</td>
+                <td>57</td>
+                <td>57</td>
+                <td>228</td>
+                <td>171</td>
+            </tr>
+            <tr class="colorchu">
+                <td class="upper" rowspan="4">Ciências<br />humanas</td>
+                <td class="ncenter">Geografia</td>
+                <td><b class="upper dropdown">Geo<div class="dropdown-content"><a href="v3/#GEO">1° Ano</a><a href="v3/#GEO2">2° Ano</a><a href="v3/#GEO3">3° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b class="upper">1</b></td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>57</td>
+                <td>57</td>
+                <td>57</td>
+                <td>0</td>
+                <td>228</td>
+                <td>171</td>
+            </tr>
+            <tr class="colorchu">
+                <td class="ncenter">História</td>
+                <td><b class="upper dropdown">his<div class="dropdown-content"><a href="v3/#HIS3">3° Ano</a><a href="v3/#HIS4">4° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b class="upper">1</b></td>
+                <td>0</td>
+                <td>0</td>
+                <td>4</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>114</td>
+                <td>85,5</td>
+                <td>266</td>
+                <td>199,5</td>
+            </tr>
+            <tr class="colorchu">
+                <td class="ncenter">Sociologia</td>
+                <td><b class="upper dropdown">soc<div class="dropdown-content"><a href="v3/#SOC">1° Ano</a><a href="v3/#SOC2">2° Ano</a><a href="v3/#SOC3">3° Ano</a><a href="v3/#SOC4">4° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b class="upper">1</b></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>28,5</td>
+                <td>28,5</td>
+                <td>28,5</td>
+                <td>28,5</td>
+                <td>152</td>
+                <td>114</td>
+            </tr>
+            <tr class="colorchu">
+                <td class="ncenter">Filosofia</td>
+                <td><b class="upper dropdown">fil<div class="dropdown-content"><a href="v3/#FIL">1° Ano</a><a href="v3/#FIL2">2° Ano</a><a href="v3/#FIL3">3° Ano</a><a href="v3/#FIL4">4° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b class="upper">1</b></td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>28,5</td>
+                <td>28,5</td>
+                <td>28,5</td>
+                <td>28,5</td>
+                <td>152</td>
+                <td>114</td>
+            </tr>
+            <tr class="colorlig2">
+                <td rowspan="2" style="background-color: white;"><p>Parte<br />Divers.Obrigatória</p></td>
+                <td class="upper" rowspan="2">Linguagens</td>
+                <td class="ncenter">Inglês</td>
+                <td><b class="upper dropdown">ing<div class="dropdown-content"><a href="v3/#ING">1° Ano</a><a href="v3/#ING2">2° Ano</a><a href="v3/#ING3">3° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b class="upper">1</b></td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>57</td>
+                <td>57</td>
+                <td>57</td>
+                <td>0</td>
+                <td>228</td>
+                <td>171</td>
+            </tr>
+            <tr class="colorlig2">
+                <td class="ncenter">Relações Humanas no Mundo do Trabalho</td>
+                <td><b class="upper dropdown">rmt<div class="dropdown-content"><a href="v3/#RMT4">4° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b class="upper">1</b></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="divi">
+                <td colspan="6"><div style="margin: 6px 0 6px 0;">FORMAÇÃO GERAL = Sub Total I</div></td>
+                <td>21</td>
+                <td>21</td>
+                <td>25</td>
+                <td>18</td>
+                <td>599</td>
+                <td>599</td>
+                <td>713</td>
+                <td>513</td>
+                <td>3230</td>
+                <td>2422,5</td>
+            </tr>
+            <tr class="colorpro">
+                <td rowspan="17"><div class="rotate upper"><b>FORMAÇÃO PROFISSIONAL</b></div></td>
+                <td class="ncenter" colspan="2">Projeto Integrador</td>
+                <td><b class="upper dropdown">PJI<div class="dropdown-content"><a href="v3/#PJI">4° Ano</a></div></b></td>
+                <td><b class="upper">T/p</b></td>
+                <td><b>1</b></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>85,5</td>
+                <td>114</td>
+                <td>85,5</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Fundamentos de Eletrônica Aplicada à Informática</td>
+                <td><b class="upper dropdown">FEI<div class="dropdown-content"><a href="v3/#FEI">1° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b>1</b></td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Sistemas Computacionais I</td>
+                <td><b class="upper dropdown">SC1<div class="dropdown-content"><a href="v3/#SC1">1° Ano</a></div></b></td>
+                <td><b class="upper">P</b></td>
+                <td><b>1</b></td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Algoritmos</td>
+                <td><b class="upper dropdown">alg<div class="dropdown-content"><a href="v3/#ALG">1° Ano</a></div></b></td>
+                <td><b class="upper">t/P</b></td>
+                <td><b>1</b></td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Linguagem de Programação I</td>
+                <td><b class="upper dropdown">lp1<div class="dropdown-content"><a href="v3/#LP1">1° Ano</a></div></b></td>
+                <td><b class="upper">P</b></td>
+                <td><b>1</b></td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>114</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>152</td>
+                <td>114</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Prática de Laboratório I</td>
+                <td><b class="upper dropdown">pl1<div class="dropdown-content"><a href="v3/#PL1">1° Ano</a></div></b></td>
+                <td><b class="upper">P</b></td>
+                <td><b>1</b></td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>85,5</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>114</td>
+                <td>85,5</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Sistemas Computacionais II</td>
+                <td><b class="upper dropdown">SC2<div class="dropdown-content"><a href="v3/#SC2">2° Ano</a></div></b></td>
+                <td><b class="upper">P</b></td>
+                <td><b>1</b></td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>0</td>
+                <td>0</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Linguagem de Programação II</td>
+                <td><b class="upper dropdown">lp2<div class="dropdown-content"><a href="v3/#LP2">2° Ano</a></div></b></td>
+                <td><b class="upper">P</b></td>
+                <td><b>1</b></td>
+                <td>0</td>
+                <td>6</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>171</td>
+                <td>0</td>
+                <td>0</td>
+                <td>228</td>
+                <td>171</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Prática de Laboratório II</td>
+                <td><b class="upper dropdown">pl2<div class="dropdown-content"><a href="v3/#PL2">2° Ano</a></div></b></td>
+                <td><b class="upper">P</b></td>
+                <td><b>1</b></td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>85,5</td>
+                <td>0</td>
+                <td>0</td>
+                <td>114</td>
+                <td>85,5</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Finanças</td>
+                <td><b class="upper dropdown">fin<div class="dropdown-content"><a href="v3/#FIN">3° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b>1</b></td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>0</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Banco de Dados</td>
+                <td><b class="upper dropdown">bdd<div class="dropdown-content"><a href="v3/#BDD">3° Ano</a></div></b></td>
+                <td><b class="upper">T/p</b></td>
+                <td><b>1</b></td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>0</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Redes de Computadores</td>
+                <td><b class="upper dropdown">rdc<div class="dropdown-content"><a href="v3/#RDC">3° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b>1</b></td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>0</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Segurança da Informação</td>
+                <td><b class="upper dropdown">sin<div class="dropdown-content"><a href="v3/#SIN">4° Ano</a></div></b></td>
+                <td><b class="upper">T/p</b></td>
+                <td><b>1</b></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Desenvolvimento Web</td>
+                <td><b class="upper dropdown">dsw<div class="dropdown-content"><a href="v3/#DSW">4° Ano</a></div></b></td>
+                <td><b class="upper">p</b></td>
+                <td><b>1</b></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Gestão de Negócios</td>
+                <td><b class="upper dropdown">gen<div class="dropdown-content"><a href="v3/#GEN">4° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b>1</b></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Teoria de Desenvolvimento de Sistemas</td>
+                <td><b class="upper dropdown">tds<div class="dropdown-content"><a href="v3/#TDS">4° Ano</a></div></b></td>
+                <td><b class="upper">T</b></td>
+                <td><b>1</b></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="colorpro">
+                <td class="ncenter" colspan="2">Projetos de Sistemas</td>
+                <td><b class="upper dropdown">pjs<div class="dropdown-content"><a href="v3/#PJS">4° Ano</a></div></b></td>
+                <td><b class="upper">p</b></td>
+                <td><b>1</b></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>57</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr class="divi">
+                <td colspan="6"><div style="margin: 3px 0 3px 0;">FORMAÇÃO PROFISSIONALIZANTE = Sub Total II</div></td>
+                <td>13</td>
+                <td>11</td>
+                <td>6</td>
+                <td>13</td>
+                <td>371</td>
+                <td>314</td>
+                <td>171</td>
+                <td>371</td>
+                <td>1634</td>
+                <td>1225,5</td>
+            </tr>
+            <tr>
+                <td rowspan="4"><p class="upper">Carga horária<br />total mínima<br />obrigatória</p></td>
+                <td colspan="5" class="ncenter"><b>Total de Aulas Semanais (Aulas de 45 minutos)</b></td>
+                <td>34</td>
+                <td>32</td>
+                <td>31</td>
+                <td>31</td>
+                <td>969</td>
+                <td>912</td>
+                <td>883,5</td>
+                <td>883,5</td>
+                <td>4864</td>
+                <td><b>3648</b></td>
+            </tr>
+            <tr>
+                <td colspan="14" class="ncenter"><b>Formação Geral (Base Nacional Comum + Parte Diversificada Obrigatória)</b></td>
+                <td><b>2422,5</b></td>
+            </tr>
+            <tr>
+                <td colspan="14" class="ncenter"><b>Formação Profissional (Projeto Integrador + Parte Específica)</b></td>
+                <td><b>1225,5</b></td>
+            </tr>
+            <tr class="divi">
+                <td colspan="14" class="ncenter"><b>Carga Horária Total Mínima Obrigatória (contando com o estágio obrigatório)</b></td>
+                <td><b>4008</b></td>
+            </tr>
+            <tr>
+                <td class="upper" rowspan="6">Parte<br />diversificada<br />optativa</td>
+                <td colspan="2" class="divi">Componente Curricular Optativo</td>
+                <td class="divi">Cód.</td>
+                <td class="divi">Trat.<br />Met.</td>
+                <td class="divi">Núm.<br />Prof.</td>
+                <td class="divi" colspan="4">Aulas<br />Semanais</td>
+                <td class="divi" colspan="4">Carga horária</td>
+                <td class="divi">Total<br />Aulas</td>
+                <td class="divi">Total<br />Horas</td>
+            </tr>
+            <tr>
+                <td colspan="2">Espanhol Básico</td>
+                <td><b class="upper dropdown">esb<div class="dropdown-content"><a href="v3/#ESB">Básico</a></div></b></td>
+                <td><b class="upper">t</b></td>
+                <td><b>1</b></td>
+                <td colspan="4">2</td>
+                <td colspan="4">57</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr>
+                <td colspan="2">Espanhol Intermediário</td>
+                <td><b class="upper dropdown">esi<div class="dropdown-content"><a href="v3/#ESI">Intermediário</a></div></b></td>
+                <td><b class="upper">t</b></td>
+                <td><b>1</b></td>
+                <td colspan="4">2</td>
+                <td colspan="4">57</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr>
+                <td colspan="2">Espanhol Avançado</td>
+                <td><b class="upper dropdown">esa<div class="dropdown-content"><a href="v3/#ESA">Avançado</a></div></b></td>
+                <td><b class="upper">t</b></td>
+                <td><b>1</b></td>
+                <td colspan="4">2</td>
+                <td colspan="4">57</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr>
+                <td colspan="2">Libras Básico</td>
+                <td><b class="upper dropdown">lib1<div class="dropdown-content"><a href="v3/#LIB1">Básico</a></div></b></td>
+                <td><b class="upper">t</b></td>
+                <td><b>1</b></td>
+                <td colspan="4">2</td>
+                <td colspan="4">57</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr>
+                <td colspan="2">Libras Intermediário</td>
+                <td><b class="upper dropdown">lib2<div class="dropdown-content"><a href="v3/#LIB2">Intermediário</a></div></b></td>
+                <td><b class="upper">t</b></td>
+                <td><b>1</b></td>
+                <td colspan="4">2</td>
+                <td colspan="4">57</td>
+                <td>76</td>
+                <td>57</td>
+            </tr>
+            <tr>
+                <td class="upper">Estágio<br />Supervisionado</td>
+                <td colspan="14" class="ncenter"><b>Estágio Profissional Supervisionado (obrigatório)</b></td>
+                <td>360</td>
+            </tr>
+            <tr>
+                <td class="upper">Carga horária<br />total máxima</td>
+                <td colspan="14" class="ncenter divi"><b>Carga Horária Total Máxima</b></td>
+                <td style="background: #c0c0c0">4293</td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

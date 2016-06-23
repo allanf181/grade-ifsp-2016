@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Estrutura Curricular</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+     <script src="http://www.w3schools.com/lib/w3data.js"></script> 
+    <script>
+        $(document).ready(function(){
+            window.location.hash = window.location.hash.toUpperCase();
+            var arquivo = eval("'" + window.location.hash.substring(1) + ".json'");
+            $.getJSON(arquivo.toString() , function(dados){
+                $('#cc').html(dados.cc);
+                $('#ano').append(dados.ano);
+                $('#cod').append(dados.cod);
+                $('#nsd').append(dados.nsd);
+                $('#tda').append(dados.tda);
+                $('#tdh').append(dados.tdh);
+                $('#' + dados.metodo).html('x');
+                $('#' + dados.usalocal).html('x');
+                $('#quais').append(dados.quais);
+                $('#ementa').append(dados.ementa);
+                $('#obj').append(dados.obj);
+                $('#contprog').append(dados.contprog);
+                $('#biblibasic').append(dados.biblibasic);
+                $('#biblicomp').append(dados.biblicomp);
+                var titulo = dados.cc;
+                titulo = titulo.toLowerCase().replace(/^[\u00C0-\u1FFF\u2C00-\uD7FF\w]|\s[\u00C0-\u1FFF\u2C00-\uD7FF\w]/g, function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+});
+                $('title').html('Plano de ensino: ' + dados.cod + ' (' + titulo + ')')
+            });
+        });
+    </script>
+</head>
+<body>
+   <a href="../"><div class="dfn" datainfo="Voltar" onMouseOver="this.style.color='#000'"
+   onMouseOut="this.style.color='rgba(0,0,0,0.5)'">
+        <i class="material-icons" style="font-size: 40px;color: rgba(0,0,0,0.5); " onMouseOver="this.style.color='#000'"
+   onMouseOut="this.style.color='rgba(0,0,0,0.5)'">arrow_back</i>
+   </div></a>
+    <center>
+        <table style="width: 90%">
+            <tr>
+                <td>
+                    <img src="../img/ifsp.png" style="height: auto; width: 350px">
+                </td>
+                <td class="center" colspan="2">
+                    <p class="upper bold">CÂMPUS Cubatão</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="line"><p class="upper bold">1 - IDENTIFICAÇÃO</p></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="line"><p>Curso: <b>Técnico em Informática Integrado ao Ensino Médio</b></p></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="line"><p>Componente Curricular: <b id="cc" class="upper">ERRO - Atualize a pagina, caso ainda veja essa mensagem, volte e abra de novo o link.</b></p></td>
+            </tr>
+            <tr>
+                <td class="line" style="width: 40%"><p>Ano: <b><span id="ano"></span>º</b></p></td>
+                <td class="line" colspan="2" ><p>Código: <b id="cod"></b></p></td>
+            </tr>
+            <tr>
+                <td class="line"><p>Nº de aulas semanais: <b id="nsd"></b></p></td>
+                <td class="line"><p>Total de aulas: <b id="tda"></b></p></td>
+                <td class="line"><p>Total de horas: <b id="tdh"></b></p></td>
+            </tr>
+            <tr>
+                <td>Abordagem Metodológica:<br>T ( <span id="t" class="upper">&nbsp;</span> ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P ( <span id="p" class="upper">&nbsp;</span> ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T/P ( <span id="tp" class="upper">&nbsp;</span> )</td>
+                <td colspan="2">Uso de laboratório ou outros ambientes além da sala de aula?<br> ( <span id="s" class="upper">&nbsp;</span> ) SIM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ( <span id="n" class="upper">&nbsp;</span> ) NÃO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Qual(is)? <span id="quais"></span> </td>
+            </tr>
+            <tr><td colspan="3"><p class="upper bold">2 - EMENTA:</p><div id="ementa"></div></td></tr>
+            <tr><td colspan="3"><p class="upper bold">3 - OBJETIVO:</p><div id="obj"></div></td></tr>
+            <tr><td colspan="3"><p class="upper bold">4 - CONTEÚDO PROGRAMÁTICO:</p><div id="contprog"></div></td></tr>
+            <tr><td colspan="3"><p class="upper bold">5 - BIBLIOGRAFIA BÁSICA:</p><div id="biblibasic"></div></td></tr>
+            <tr><td colspan="3"><p class="upper bold">6 - BIBLIOGRAFIA COMPLEMENTAR:</p><div id="biblicomp"></div></td></tr>
+        </table>
+    </center>
+    <script>
+w3IncludeHTML();
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{ 
+    "cc": "MATEMÁTICA",
+    "ano": "1",
+    "cod": "MAT",
+    "nsd": "5",
+    "tda": "190",
+    "tdh": "142,5",
+    "metodo": "t",
+    "usalocal": "n",
+    "quais": "",
+    "ementa": "Neste componente curricular, os estudantes têm a oportunidade de retomar e aprofundar os conceitos de Estatística Básica e utilizá-los na resolução de situações problema que pressupõe coleta, organização e comunicação dos dados. Conhecem a teoria dos conjuntos utilizando corretamente as notações, nomenclaturas e propriedades, resolvem operações entre conjuntos e problemas por meio desses conceitos. Aprofundam seu conhecimento sobre os conjuntos numéricos e utilizam as notações de intervalos para representar e operar com subconjuntos dos números reais. Retomam os conceitos básicos de álgebra de modo a obter maior destreza em manipulações e cálculos algébricos. Retomam e ampliam conceitos de geometria em figuras planas incluindo o conceito de ângulo, a classificação de polígonos e estudo aprofundado de triângulos, quadriláteros e semelhança de figuras. Generalizam processos de medição de comprimento e área, expressam o resultado de medições adequadamente usando unidades de medidas mais convenientes. Resolvem problemas de geometria métrica envolvendo relações métricas e trigonométricas de triângulos. Aprofundam o estudo de função como variação de grandezas representada algébrica e graficamente.  Estudam características, regularidades, comportamento e gráficos de funções lineares, quadráticas e modulares. Resolvem equações e inequações de 1º e 2º graus. Relacionam conceitos de simetria em representações gráficas de funções.",
+    "obj": "<ul><li>Identificar formas de quantificar dados numéricos ou informações;</li><li>Ler e interpretar dados e informações apresentados em diferentes linguagens e representações;</li><li> Compreender e emitir juízos sobre informações;</li><li>Reconhecer e utilizar a linguagem algébrica como a linguagem das ciências, necessárias para expressar as relações entre grandezas e modelar situações-problema construindo modelos descritivos de fenômenos e permitindo várias conexões dentro e fora da Matemática;</li><li>Ler e interpretar diferentes linguagens e representações;</li><li>Identificar regularidades e estabelecer relações;</li><li>Utilizar e interpretar modelos para resolução de situações-problema que envolvam medições, em especial o cálculo de distâncias inacessíveis;</li><li>Identificar em dada situação-problema as informações ou variáveis relevantes e elaborar possíveis estratégias para resolvê-la;</li><li>Construir uma visão sistemática das diferentes linguagens e campos de estudo da Matemática, estabelecendo conexões entre diferentes temas;</li><li>Compreender o conhecimento tecnológico como resultado de uma construção humana em um processo histórico e social.</li></ul>",
+    "contprog": "",
+    "biblibasic": "",
+    "biblicomp": ""
+}
